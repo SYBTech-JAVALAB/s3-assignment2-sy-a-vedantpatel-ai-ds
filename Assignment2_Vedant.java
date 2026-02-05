@@ -49,6 +49,7 @@ class Student{
 	}
 	
 	void display_details() {
+		System.out.println("Student Details.");
 		System.out.println("Course Name: " + course_name);
 		System.out.println("Student Name: " + name);
 		System.out.println("Student id: " + id);
@@ -68,15 +69,15 @@ public class Assignment2_Vedant {
 	public static void main(String[] argc) {
 		Scanner scn = new Scanner(System.in);
 		
-		System.out.printf("Enter the number of Students:");
+		System.out.printf("Enter the number of Students: ");
 		int n = scn.nextInt();
 		
 		Student[] students = new Student[n];
 		
 		int i = 0;
 		while(i <= n-1) {
-			System.out.println("Enter details for Student " + (i+1));
-			System.out.print("Student Name: ");
+			System.out.println("Enter details for Student." + (i+1));
+			System.out.print("Enter Student Name: ");
 			String name = scn.nextLine();
 			scn.nextLine();
 				
